@@ -51,6 +51,7 @@ class WeatherChartCard extends LitElement {
       units: {
         pressure: 'hPa',
         speed: 'km/h',
+        twelve_hour: false,
         ...config.units,
       }
     };
@@ -244,7 +245,7 @@ class WeatherChartCard extends LitElement {
                 var weekday = new Date(datetime).toLocaleDateString(language,
                   { weekday: 'short' });
                 var time = new Date(datetime).toLocaleTimeString(language,
-                  { hour12: false, hour: 'numeric', minute: 'numeric' });
+                  { hour12: this.config.twelve_hour, hour: 'numeric', minute: 'numeric' });
                 if (mode == 'hourly') {
                   return time;
                 }
