@@ -52,6 +52,7 @@ entity: weather.home
 | -------------------- | ------- | -------------------------|--------------------------------------------------------------------------------------------------- |
 | pressure             | string  | 'hPa'                    | Can be 'hPa' or 'mmHg'                                                                             |
 | speed                | string  | 'km/h'                   | Can be 'km/h' or 'm/s'                                                                             |
+| twelve_hour          | boolean | false                    | Set `true` for 12 hour clock.                                                                      |
 
 ###### What custom icons can I use?
 Icons should be in svg format. Icons should have names as shown [here](https://github.com/Yevgenium/weather-chart-card/blob/a9f795f2fd02028bdad9b771d383fa38c5f3148c/src/const.js#L24). Example:
